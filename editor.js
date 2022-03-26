@@ -7,7 +7,6 @@ function preview(event){
 }
 
 //Nav
-
 const br_nav = document.querySelector('#br')
 const opac_nav = document.querySelector('#opac')
 const blur_nav = document.querySelector('#blur')
@@ -70,9 +69,11 @@ inputs[0].onchange = ()=>{
     img.style.filter = `brightness(${inputs[0].value}%)`
 }
 
-inputs[1].onchange = ()=>{
-    img.style.filter = `opacity(${inputs[1].value}%)`
-}
-inputs[2].onchange = ()=>{
-    img.style.filter = `blur(${inputs[2].value / 10 }px)`
-}
+// inputs[1].onchange = ()=>{
+//     img.style.filter = `opacity(${inputs[1].value}%)`
+// }
+// inputs[2].onchange = ()=>{
+//     img.style.filter = `blur(${inputs[2].value / 10 }px)`
+// }
+
+//OTHER EFFECTS
