@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+   <section class="main">
+    <div class="title">
+        <h2>Pic Editor</h2>
+    </div>
+
+    <div class="container">
+       <input type="file" onchange="preview(event)">
+        <div class="img">
+            <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" id="img">
+        </div>
+
+        <div class="tabs">
+            <nav>
+                <span id="br"> 
+                    <i class="fa-solid fa-sun" id="br"></i>
+                </span>
+                <span id="opac"> 
+                    <i class="fa-solid fa-circle-half-stroke" id="opac"></i>
+                </span>
+                <span id="blur"> 
+                    <i class="fa-solid fa-fire-flame-simple" id="blur"></i>
+                </span>
+                
+            </nav>
+            <div class="option">
+                <div class="br">
+                    <div class="title">Brightness</div>
+                    <input type="range" min="1" max="100" value="10" class="slider" id="rangebr">
+                </div>
+                <div class="opac">
+                    <div class="title">Opacity</div>
+                    <input type="range" min="1" max="100" value="10" class="slider" id="rangeopac">
+                </div>
+                <div class="blur">
+                    <div class="title">Blur</div>
+                    <input type="range" min="1" max="100" value="10" class="slider" id="rangeblur">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   </section>
+    <script src="editor.js"></script>
+
+</body>
+</html>
